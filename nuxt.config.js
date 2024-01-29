@@ -13,6 +13,10 @@ export default {
 
   target: 'static',
 
+  router: {
+    base: '/server-test/',
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 

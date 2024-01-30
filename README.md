@@ -1,68 +1,60 @@
-# server-test-project
+# Server Management Application
 
-## Build Setup
+Этот проект представляет собой веб-приложение на основе Vue/Nuxt.js, предназначенное для управления списком серверов клиентов. Данный проект является частью тестового задания. Приложение обеспечивает функциональность просмотра, выбора и редактирования деталей сервера.
 
-```bash
-# install dependencies
-$ npm install
+## Features
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+- **List Display**: Отображает список серверов клиентов с деталями.
+- **Select Server**: Пользователи могут выбрать сервер из списка для редактирования.
+- **Edit Server**: Предоставляет возможность редактировать свойства, такие как имя сервера и тип сервера.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+## Data Model Example
 
-# generate static project
-$ npm run generate
+```json
+[
+  {
+    "customer_id": "user1",
+    "server_name": "server7",
+    "server_type": "vds"
+  },
+  {
+    "customer_id": "user5",
+    "server_name": "server2",
+    "server_type": "dedicated"
+  },
+  {
+    "customer_id": "user3",
+    "server_name": "server4",
+    "server_type": "hosting"
+  }
+]
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Technologies Used
 
-## Special Directories
+Framework: Vue with Nuxt.js
+Typescript: Utilized for static type-checking (optional)
+UI Framework: Bootstrap-Vue (optional)
+Styling: SCSS/LESS/Stylus for advanced styling (optional)
+ES6+: Demonstrates usage of modern JavaScript features
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+## Setup and Installation
 
-### `assets`
+To set up this project locally, follow these steps:
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+## Clone the Repository:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+git clone https://github.com/adayke/server-test.git
+cd server-test
 
-### `components`
+## Install Dependencies:
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+npm install
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+## Running the Application:
 
-### `layouts`
+npm run dev
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+## Author
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Adayke
